@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Dereks Abetnego - Portfolio</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&amp;family=Inter:wght@400;600;700&amp;display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="styles.css"/>
+    <script id="tailwind-config">tailwind.config = {darkMode: "class", theme: {extend: {colors: {"primary-fixed-dim": "#b9c7e4", "on-secondary": "#ffffff", primary: "#000000", "on-primary-fixed-variant": "#39475f", "on-primary-fixed": "#0d1c32", "on-error": "#ffffff", "primary-fixed": "#d6e3ff", "surface-tint": "#515f78", surface: "#f9f9f9", "secondary-container": "#5ffbd6", "on-primary": "#ffffff", "inverse-surface": "#2f3131", "on-tertiary": "#ffffff", error: "#ba1a1a", "on-surface-variant": "#44474d", secondary: "#006b58", "primary-container": "#0d1c32", "on-surface": "#1a1c1c", outline: "#75777e", "on-primary-container": "#76849f", "inverse-primary": "#b9c7e4", "on-secondary-fixed-variant": "#005142", "on-tertiary-container": "#2180ff", "surface-container-low": "#f3f3f4", tertiary: "#001a41", "on-tertiary-fixed-variant": "#004493", "surface-container-lowest": "#ffffff", "inverse-on-surface": "#f0f1f1", "secondary-fixed-dim": "#38debb", "on-error-container": "#93000a", "surface-container-high": "#e8e8e8", "surface-variant": "#e2e2e2", "on-background": "#1a1c1c", "surface-container-highest": "#e2e2e2", "tertiary-fixed-dim": "#adc7ff", "surface-bright": "#f9f9f9", "on-secondary-fixed": "#002019", "secondary-fixed": "#5ffbd6", "on-secondary-container": "#00725e", "on-tertiary-fixed": "#001a41", background: "#f9f9f9", "error-container": "#ffdad6", "surface-container": "#eeeeee", "tertiary-fixed": "#d8e2ff", "outline-variant": "#c5c6cd", "surface-dim": "#dadada", tertiary: "#000000"}, borderRadius: {DEFAULT: "0.125rem", lg: "0.25rem", xl: "0.5rem", full: "0.75rem"}, spacing: {"container-max": "1200px", base: "4px", sm: "16px", md: "24px", xs: "8px", gutter: "24px", xl: "80px", lg: "48px"}, fontFamily: {h2: ["Inter"], "body-lg": ["Inter"], "body-md": ["Inter"], h3: ["Inter"], "label-caps": ["Space Grotesk"], h1: ["Inter"], code: ["Space Grotesk"]}, fontSize: {h2: ["2.25rem", {lineHeight: "1.2", letterSpacing: "-0.01em", fontWeight: "600"}], "body-lg": ["1.125rem", {lineHeight: "1.6", fontWeight: "400"}], "body-md": ["1rem", {lineHeight: "1.6", fontWeight: "400"}], h3: ["1.5rem", {lineHeight: "1.3", fontWeight: "600"}], "label-caps": ["0.875rem", {lineHeight: "1.0", letterSpacing: "0.1em", fontWeight: "500"}], h1: ["3.5rem", {lineHeight: "1.1", letterSpacing: "-0.02em", fontWeight: "700"}], code: ["0.9rem", {lineHeight: "1.5", fontWeight: "400"}]}}}};</script>
+  </head>
+  <body class="antialiased font-body-md text-body-md">
+    <!-- TopNavBar -->
+    <header class="backdrop-blur-md font-sans tracking-tight text-sm uppercase font-semibold docked full-width top-0 sticky z-50 border-b border-teal-400/10 flat no-shadow w-full dark:bg-slate-950/80 bg-white/90 border-slate-200 dark:border-teal-400/10">
+      <div class="flex justify-between items-center max-w-[1200px] mx-auto px-6 h-16">
+        <div class="text-lg font-bold tracking-tighter dark:text-slate-100 text-slate-900">
+          Dereks Abetnego
+        </div>
+        <div class="flex items-center gap-3">
+          <span class="material-symbols-outlined text-slate-400 text-lg hidden dark:block">sunny</span>
+          <span class="material-symbols-outlined text-slate-400 text-lg block dark:hidden">dark_mode</span>
+          <button id="lang-toggle" type="button" aria-label="Toggle language" class="inline-flex items-center justify-center h-9 px-3 rounded border border-slate-300 text-slate-700 dark:border-slate-600 dark:text-slate-100 text-xs font-semibold">
+            ID
+          </button>
+          <label aria-label="Toggle Theme" class="relative inline-flex items-center cursor-pointer">
+            <input class="sr-only peer" id="theme-toggle" onchange="toggleTheme()" type="checkbox"/>
+            <div class="w-11 h-6 bg-slate-700 peer-focus:outline-none rounded-full peer dark:bg-teal-900 peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-teal-400"></div>
+          </label>
+        </div>
+      </div>
+    </header>
+    <main class="max-w-[1200px] mx-auto px-6 w-full">
+      <!-- Hero Section -->
+      <section class="py-xl flex flex-col-reverse md:flex-row items-center gap-lg">
+        <div class="flex-1 space-y-md">
+          <p class="font-code text-code text-[#64FFDA]"><span data-i18n="heroIntro">Hi, my name is</span></p>
+          <div>
+            <h1 class="font-h1 text-h1 mb-2 dark:text-slate-100 text-slate-900">Dereks Abetnego.</h1>
+            <h2 class="font-h2 text-h2 text-slate-400"><span data-i18n="heroSubtitle">Web Developer | IT Support | Android Developer | Excel</span></h2>
+          </div>
+          <p class="font-body-lg text-body-lg text-slate-400 max-w-2xl leading-relaxed">
+            <span data-i18n="heroDesc">I am an IT Support and Web Developer with experience in troubleshooting hardware and software issues, maintaining networks, managing servers, and assisting users with their IT needs. My programming expertise lies in building web applications with HTML, and Node.js, managing databases, and using version control with GitHub.</span>
+          </p>
+          <div class="flex gap-4 pt-4">
+            <a class="btn-primary font-label-caps text-label-caps px-8 py-3 rounded-DEFAULT uppercase tracking-widest inline-block" href="https://api.whatsapp.com/send/?phone=%2B6285161288089&text&type=phone_number&app_absent=0"><span data-i18n="contactButton">Contact Me</span></a>
+            <a class="btn-secondary font-label-caps text-label-caps px-8 py-3 rounded-DEFAULT uppercase tracking-widest inline-block flex items-center gap-2" href="https://linkedin.com/in/dereks-abetnego" target="_blank">
+              <span class="material-symbols-outlined text-sm">link</span> <span data-i18n="linkedinButton">LinkedIn</span>
+            </a>
+          </div>
+        </div>
+        <div class="w-48 h-48 md:w-64 md:h-64 rounded-full overflow-hidden border-2 border-[#64FFDA] p-2 flex-shrink-0">
+          <img class="w-full h-full object-cover rounded-full grayscale hover:grayscale-0 transition-all duration-500" data-alt="A professional, high-contrast studio portrait of a modern tech professional. The subject is well-lit with cool, cinematic lighting against a deep, dark navy background. The styling is minimal and sharp, reflecting a corporate modern aesthetic suitable for a developer portfolio. The overall mood conveys competence, precision, and technical proficiency." src="dereks abetnego.webp"/>
+        </div>
+      </section>
+      <!-- Experience Section -->
+      <section class="py-xl" id="experience">
+        <h2 class="font-h2 text-h2 mb-lg flex items-center gap-4 dark:text-slate-100 text-slate-800">
+          <span class="font-code text-code text-[#64FFDA]">01.</span>
+          <span data-i18n="experienceHeading">Experience</span>
+          <div class="h-[1px] bg-slate-800 flex-1 ml-4"></div>
+        </h2>
+        <div class="relative pl-6 space-y-lg">
+          <div class="timeline-line"></div>
+          <!-- Job 1 -->
+          <div class="relative pl-8">
+            <div class="timeline-node timeline-node-active"></div>
+            <div class="tech-card p-6 rounded-lg space-y-4">
+              <div class="flex justify-between items-start flex-wrap gap-2">
+                <div>
+                  <h3 class="font-h3 text-h3 dark:text-slate-100 text-slate-800"><span data-i18n="job1Type">Project</span> <span class="text-[#64FFDA]">@ PT. Hana Huberta</span></h3>
+                  <p class="font-label-caps text-label-caps text-slate-400 mt-1">July - December 2025</p>
+                </div>
+              </div>
+              <p class="font-body-md text-body-md text-slate-400">
+                <span data-i18n="job1Desc">Attendance application project. Developed and maintained robust features for tracking employee time, ensuring accurate data synchronization, and improving overall system reliability.</span>
+              </p>
+            </div>
+          </div>
+          <!-- Job 2 -->
+          <div class="relative pl-8">
+            <div class="timeline-node"></div>
+            <div class="tech-card p-6 rounded-lg space-y-4">
+              <div class="flex justify-between items-start flex-wrap gap-2">
+                <div>
+                  <h3 class="font-h3 text-h3 dark:text-slate-100 text-slate-800"><span data-i18n="job2Type">Intern</span> <span class="text-[#64FFDA]">@ PT. Rekatama Global Sinergi</span></h3>
+                  <p class="font-label-caps text-label-caps text-slate-400 mt-1">May - September 2024</p>
+                </div>
+              </div>
+              <p class="font-body-md text-body-md text-slate-400">
+                <span data-i18n="job2Desc">Provided troubleshooting support for hardware and software systems. Assisted in network configuration, monitoring infrastructure health, and ensuring optimal performance across internal systems.</span>
+              </p>
+            </div>
+          </div>
+          <!-- Job 3 -->
+          <div class="relative pl-8">
+            <div class="timeline-node"></div>
+            <div class="tech-card p-6 rounded-lg space-y-4">
+              <div class="flex justify-between items-start flex-wrap gap-2">
+                <div>
+                  <h3 class="font-h3 text-h3 dark:text-slate-100 text-slate-800"><span data-i18n="job3Type">Intern</span> <span class="text-[#64FFDA]">@ Yayasan Masjid Al Mu'min - Bekasi</span></h3>
+                  <p class="font-label-caps text-label-caps text-slate-400 mt-1">May - September 2022</p>
+                </div>
+              </div>
+              <p class="font-body-md text-body-md text-slate-400">
+                <span data-i18n="job3Desc">Managed API integrations and database operations. Streamlined data retrieval processes and assisted in the development of lightweight web tools for internal administrative use.</span>
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Skills Section -->
+      <section class="py-xl" id="skills">
+        <h2 class="font-h2 text-h2 mb-lg flex items-center gap-4 dark:text-slate-100 text-slate-800">
+          <span class="font-code text-code text-[#64FFDA]">02.</span>
+          <span data-i18n="skillsHeading">Technical Arsenal</span>
+          <div class="h-[1px] bg-slate-800 flex-1 ml-4"></div>
+        </h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <!-- Hard Skills -->
+          <div class="tech-card p-8 rounded-xl">
+            <h3 class="font-h3 text-h3 mb-6 flex items-center gap-2 dark:text-slate-100 text-slate-800">
+              <span class="material-symbols-outlined text-[#64FFDA]">terminal</span>
+              <span data-i18n="coreTechnologies">Core Technologies</span>
+            </h3>
+            <div class="flex flex-wrap gap-3">
+              <span class="skill-badge font-label-caps text-label-caps text-[#64FFDA] px-4 py-2">HTML</span>
+              <span class="skill-badge font-label-caps text-label-caps text-[#64FFDA] px-4 py-2">Node.js</span>
+              <span class="skill-badge font-label-caps text-label-caps text-[#64FFDA] px-4 py-2">Postman API</span>
+              <span class="skill-badge font-label-caps text-label-caps text-[#64FFDA] px-4 py-2">GitHub</span>
+              <span class="skill-badge font-label-caps text-label-caps text-[#64FFDA] px-4 py-2">Flutter</span>
+              <span class="skill-badge font-label-caps text-label-caps text-[#64FFDA] px-4 py-2">Laravel</span>
+              <span class="skill-badge font-label-caps text-label-caps text-[#64FFDA] px-4 py-2">MS Office 360</span>
+              <span class="skill-badge font-label-caps text-label-caps text-[#64FFDA] px-4 py-2">Testing &amp; Debugging</span>
+              <span class="skill-badge font-label-caps text-label-caps text-[#64FFDA] px-4 py-2">Troubleshooting</span>
+              <span class="skill-badge font-label-caps text-label-caps text-[#64FFDA] px-4 py-2">Windows Config</span>
+              <span class="skill-badge font-label-caps text-label-caps text-[#64FFDA] px-4 py-2">Networking</span>
+              <span class="skill-badge font-label-caps text-label-caps text-[#64FFDA] px-4 py-2">Helpdesk</span>
+            </div>
+          </div>
+          <!-- Soft Skills -->
+          <div class="tech-card p-8 rounded-xl">
+            <h3 class="font-h3 text-h3 mb-6 flex items-center gap-2 dark:text-slate-100 text-slate-800">
+              <span class="material-symbols-outlined text-[#64FFDA]">psychology</span>
+              <span data-i18n="professionalTraits">Professional Traits</span>
+            </h3>
+            <div class="flex flex-wrap gap-3">
+              <span class="skill-badge font-label-caps text-label-caps text-slate-300 border-slate-600 bg-slate-800/30 px-4 py-2" data-i18n="skillCommunication">Communication</span>
+              <span class="skill-badge font-label-caps text-label-caps text-slate-300 border-slate-600 bg-slate-800/30 px-4 py-2" data-i18n="skillDetailOriented">Detail Oriented</span>
+              <span class="skill-badge font-label-caps text-label-caps text-slate-300 border-slate-600 bg-slate-800/30 px-4 py-2" data-i18n="skillProblemSolving">Problem Solving</span>
+              <span class="skill-badge font-label-caps text-label-caps text-slate-300 border-slate-600 bg-slate-800/30 px-4 py-2" data-i18n="skillAdaptability">Adaptability</span>
+              <span class="skill-badge font-label-caps text-label-caps text-slate-300 border-slate-600 bg-slate-800/30 px-4 py-2" data-i18n="skillCollaboration">Collaboration</span>
+              <span class="skill-badge font-label-caps text-label-caps text-slate-300 border-slate-600 bg-slate-800/30 px-4 py-2" data-i18n="skillCriticalThinking">Critical Thinking</span>
+              <span class="skill-badge font-label-caps text-label-caps text-slate-300 border-slate-600 bg-slate-800/30 px-4 py-2" data-i18n="skillTimeManagement">Time Management</span>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Education Section -->
+      <section class="py-xl mb-xl" id="education">
+        <h2 class="font-h2 text-h2 mb-lg flex items-center gap-4 dark:text-slate-100 text-slate-800">
+          <span class="font-code text-code text-[#64FFDA]">03.</span>
+          <span data-i18n="educationHeading">Education</span>
+          <div class="h-[1px] bg-slate-800 flex-1 ml-4"></div>
+        </h2>
+        <div class="tech-card p-8 rounded-xl flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
+          <div>
+            <h3 class="font-h3 text-h3 dark:text-slate-100 text-slate-800">Kwik Kian Gie Institute of Business and Informatics</h3>
+            <p class="font-body-lg text-body-lg text-slate-400 mt-2">Teknik Informatika</p>
+            <p class="font-body-md text-body-md text-slate-500 mt-1">GPA: <span class="text-[#64FFDA]">3.38</span></p>
+          </div>
+          <div class="font-label-caps text-label-caps text-[#64FFDA] px-4 py-2 border border-[#64FFDA]/30 rounded bg-[#64FFDA]/5">
+            2019 - 2024
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- Footer -->
+    <footer class="bg-slate-900 font-sans text-xs text-slate-500 full-width py-12 border-t border-slate-800 flat w-full" id="contact">
+      <div class="flex flex-col items-center gap-6 max-w-[1200px] mx-auto text-center px-6">
+        <h2 class="font-h2 text-h2 mb-2 dark:text-slate-100 text-slate-800"><span data-i18n="footerHeading">Get In Touch</span></h2>
+        <p class="font-body-md text-body-md text-slate-400 max-w-md mx-auto mb-4">
+          <span data-i18n="footerText">Whether you have a question or just want to say hi, I'll try my best to get back to you!</span>
+        </p>
+        <div class="flex flex-col md:flex-row gap-4 mb-4 font-body-md text-body-md">
+          <span class="text-slate-300 flex items-center gap-2"><span class="material-symbols-outlined text-[#64FFDA] text-sm">location_on</span> Jakarta, 14130</span>
+          <span class="text-slate-300 flex items-center gap-2"><span class="material-symbols-outlined text-[#64FFDA] text-sm">mail</span> ricardoabet231@gmail.com</span>
+          <span class="text-slate-300 flex items-center gap-2"><span class="material-symbols-outlined text-[#64FFDA] text-sm">phone</span> +62 85161288089</span>
+        </div>
+        <div class="flex gap-6">
+          <a class="text-slate-500 hover:text-teal-300 underline underline-offset-4 transition-all duration-200" href="https://linkedin.com/in/dereks-abetnego">LinkedIn</a>
+          <a class="text-slate-500 hover:text-teal-300 underline underline-offset-4 transition-all duration-200" href="#">GitHub</a>
+          <a class="text-slate-500 hover:text-teal-300 underline underline-offset-4 transition-all duration-200" href="mailto:ricardoabet231@gmail.com">Email</a>
+        </div>
+        <div class="text-sm font-bold text-slate-200 mt-8">
+          © 2024 Dereks Abetnego. Built with precision.
+        </div>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
